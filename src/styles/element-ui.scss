@@ -1,0 +1,198 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// 修复 el-date-picker css样式的步骤
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+// 设置侧边抽屉公共样式
+.el-drawer {
+  @media screen and (max-width: 768px) {
+    width: 90% !important;
+  }
+  @media screen and (min-width: 769px) {
+    width: 80% !important;
+  }
+  @media screen and (min-width: 992px) {
+    width: 70% !important;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 50% !important;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 40% !important;
+  }
+  :focus{
+    outline:0;
+  }
+  .el-drawer__header {
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .login-form {
+    margin: 0 auto;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (min-width: 769px) {
+      width: 60%;
+    }
+  }
+  
+  .el-scrollbar {
+    height: calc(100% - 100px);
+  }
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+}
+
+.el-message-box {
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 769px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 30%;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 20%;
+  }
+}
+
+.el-picker-panel {
+  @media screen and (max-width: 662px) {
+    width: 100%;
+    overflow-x: auto !important;
+  }
+}
+
+	
+.el-popover{
+  max-height: 300px;
+  overflow-y: auto;
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+.el-popover__title {
+  font-size: 14px;
+}
+
+.el-button,
+.el-dropdown,
+.el-popover,
+.el-form-item__label,
+.el-table {
+  font-size: 12px;
+}
+
+.el-button--text {
+  span {
+    font-size: 12px;
+  }
+}
+
+.el-dropdown .el-button-group .el-button {
+  padding: 5px 8px;
+}
+
+.el-dropdown__caret-button {
+  padding: 5px 8px 4px !important;
+}
+
+.el-dropdown-menu__item {
+  text-align: center;
+}
+
+.el-textarea {
+  .el-textarea__inner {
+    padding-bottom: 26px !important;
+  }
+  .el-input__count {
+    line-height: 1.5em;
+  }
+}
+
+//自定义表头颜色
+.table-header-cell {
+  background-color: #f6f9ff !important;
+}
+
+// 定义表格斑马纹颜色
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: #f5f3f3;
+}
+
+.el-table__expanded-cell {
+  padding: 10px 20px!important;
+}
+
+.el-col-zd-5 {
+  width: 25%;
+}
+
+.el-form-item {
+  margin-left: 20px;
+}
